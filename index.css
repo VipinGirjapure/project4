@@ -612,11 +612,19 @@ text-align: center;
        color: #801df1;
    }  
    }
-    .colon1{
+   .colon1{
         position: absolute;
         top: 51px;
         left: 189px;
         font-size: xx-large;
+    }
+    @media (max-width: 450px){
+         .colon1{
+        position: absolute;
+        top: 45px;
+        left: 147px;
+        font-size: xx-large;
+    }
     }
     .colon2{
         position: absolute;
@@ -624,5 +632,13 @@ text-align: center;
         left: 298px;
         font-size: xx-large;
     }
-    
+    @media (max-width: 450px){
+        .colon2{
+            position: absolute;
+            top: 45px;
+            left: 245px;
+            font-size: xx-large;
+        }
+
+    }
    
