@@ -103,7 +103,7 @@ background-color: #9263c9;
         color: black;
     }  
 }
-.set {
+.set{
     position: absolute;
     top: 39rem;
     left: 9rem;
@@ -115,32 +115,36 @@ background-color: #9263c9;
     cursor: pointer;
     background-image: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
 }
-.set  :hover{
-color: #6E54EC;
-    /* background-image: linear-gradient(to right,#F1A7C5,#FC5EFF,#CB52F8,#6E54EC); */
+.set:hover{
+/* color: #6E54EC; */
+background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+
 }
 .textsetalarm{
-    display: inline-block;
+    /* display: inline-block; */
     position: relative;
+    top: 1rem;
     left: 5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 23px;
+    opacity: 1;
 }
-/* .textsetalarm  :hover{
-    
-    background-image: linear-gradient(to right,#F1A7C5,#FC5EFF,#CB52F8,#6E54EC);
-} */
-    /* margin: 0 0 0 0; */
-    /* height: 100%; */
-    /* color: whitesmoke; */
-    /* text-align: center; */
-    /* transition-property: background-image;
-    transition-duration: 0.3sec;
-    transition-timing-function: ease-out; */
-    
-/* .set ::after{
-    background-color: #3D087B;
-} */
+.set:hover .textsetalarm{ 
+   display: none; 
+}
+.set:hover:before{
+    content: "Party time!";
+    display: inline-block;
+    position: relative;
+    top: 1rem;
+
+    left: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    opacity: 1;
+
+}
+  
 @media (max-width: 450px){
     .set {
         position: absolute;
@@ -148,20 +152,10 @@ color: #6E54EC;
         left: 6rem;
         width: 250px;
         height: 59px;
-        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 23px;
-        color: whitesmoke;
-        text-align: center;
-        letter-spacing: 0px; */
         border: 2px solid black;
         border-radius: 25px;
         cursor: pointer;
-        background-image: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
-        /* animation-name: vip;
-        animation-duration: 0.3sec;
-        animation-timing-function: ease-out; */
-
-        
+        background-image: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);   
     }  
 }
  .set2 {
@@ -492,7 +486,7 @@ text-align: center;
     }
     @media (max-width: 450px){
         .hours{
-            position: absolute;
+           position: absolute;
            top: 55px;;
            left:85px;
            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -631,7 +625,4 @@ text-align: center;
         font-size: xx-large;
     }
     
-    /* #set-time{
-        background-image: linear-gradient(to right, red , yellow);
-
-    } */
+   
