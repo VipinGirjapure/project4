@@ -1,12 +1,12 @@
 body{
+    width: max-content;
     background-color: #3D087B;
     /* border: 5px solid cyan; */
 }
 @media (max-width: 450px){
     body{
         background-color: #3D087B;
-       
-        /* border: 5px solid whitesmoke; */
+    width: max-content;
     }
 }
 .backround{
@@ -47,7 +47,7 @@ body{
     border-radius: 15px;
     border: 2px solid black;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: rgb(201, 158, 250) 0% 0% no-repeat padding-box;
     position: absolute;
     top: 163px;
     left: 149px;
@@ -69,7 +69,7 @@ background-color: #9263c9;
     opacity: 1;
     }
 }
-.massage{
+#message{
         position: absolute;
         top: 527px;
         left: 124px;
@@ -87,10 +87,10 @@ background-color: #9263c9;
     color: rgb(245, 238, 238);
 }
 @media (max-width: 450px){
-    .massage{
+    #message{
         position: absolute;
         top: 613px;
-        left: 0px;
+        left: 5px;
         width: 100%;
         height: 77px;
         border: 1px solid;
@@ -115,23 +115,27 @@ background-color: #9263c9;
     cursor: pointer;
     background-image: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
 }
+
 .set:hover{
 /* color: #6E54EC; */
 background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
 
 }
 .textsetalarm{
-    /* display: inline-block; */
+    /* display: inline-block;background-color: ; */
     position: relative;
     top: 1rem;
     left: 5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 23px;
-    opacity: 1;
+    /* opacity: 1; */
+    /* background-image: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5); */
+/* z-index: -1; */
 }
 .set:hover .textsetalarm{ 
    display: none; 
 }
+
 .set:hover:before{
     content: "Party time!";
     display: inline-block;
@@ -143,6 +147,8 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
     font-size: 23px;
     opacity: 1;
 
+/* background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box; */
+
 }
   
 @media (max-width: 450px){
@@ -152,10 +158,20 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
         left: 6rem;
         width: 250px;
         height: 59px;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 23px;
+        color: whitesmoke;
+        text-align: center;
+        letter-spacing: 0px; */
         border: 2px solid black;
         border-radius: 25px;
         cursor: pointer;
-        background-image: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);   
+        /* background-image: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5); */
+        /* animation-name: vip;
+        animation-duration: 0.3sec;
+        animation-timing-function: ease-out; */
+
+        
     }  
 }
  .set2 {
@@ -182,9 +198,9 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
            background-color: #F25CFE;
            }   
     }
-    .massage2{
+    #message2{
         position: absolute;
-        top: 212px;
+        top: 173px;
         left: 706px;
         width: 536px;
         height: 118px;
@@ -197,7 +213,7 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
         font-size: 30px;
     }
     @media (max-width: 450px){
-        .massage2{
+        #message2{
             position: absolute;
             top: 951px;
             left: 0px;
@@ -211,17 +227,18 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
             font-size: 30px;
         }
     }
-  .img{
+  #img{
         background-image: url(./GM.jpg);
+  background-size: cover;
         position: absolute;
-        top: 118px;
-        /* left: 500px; */
+        top: 321px;
+        left: 706px;
         width: 536px;
-        height: 341px;
+        height: 343px;
         border-radius: 0 0 8px 8px;
     }
      @media (max-width: 450px){
-        .img{
+        #img{
             background-image: url(./GM.jpg);
             position: absolute;
             top: 118px;
@@ -335,11 +352,12 @@ text-align: center;
     }
     .currentTime1{
         position: absolute;
-        top: 67px;
-        left: 785px;
-        width: 379px;
+        top: 45px;
+        left: 802px;
+        width: 347px;
         height: 130px;
         background: #801df1;
+        border: indigo;
        
         border-radius: 10px;
         z-index: -2;
@@ -360,11 +378,12 @@ text-align: center;
     }
     .currentTime2{
         position: absolute;
-        top: 55px;
+        top: 30px;
         left: 766px;
         width: 416px;
         height: 130px;
-        background:#6c36aa ;
+        background:rgb(166 89 255);
+
         border-radius: 10px;
         z-index: -1;
     }
@@ -376,7 +395,7 @@ text-align: center;
             width: 87%;
         
             height: 100px;
-            background:#af78ee;
+            background:rgb(166 89 255);
             border-radius: 10px;
             z-index: -1;
         }
@@ -384,7 +403,7 @@ text-align: center;
     .currentTime3 {
      
         position: absolute;
-        top: 42px;
+        top: 10px;
         left: 706px;
         width: 536px;
         height: 130px;
@@ -397,7 +416,7 @@ text-align: center;
         .currentTime3{
             position: absolute;
             top: 18%;
-            left: 2%;
+            left: 1%;
             width: 100%;
             height: fit-content;
             background: #c99efa;
@@ -471,26 +490,30 @@ text-align: center;
             position: absolute;
             top: 0px;
             left: 4.5rem;
-            width: 64px;
+            width: 4rem;
             height: 78px;
             font: normal normal normal 23px/28px Barlow;
             
         }
     }
-    .hours{
+    #Hours{
          position: absolute;
         top: 55px;;
         left:118px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: xx-large;
+        color: #801df1;
+    
+        z-index: 1;
     }
     @media (max-width: 450px){
-        .hours{
-           position: absolute;
+        #Hours{
+            position: absolute;
            top: 55px;;
            left:85px;
            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
            font-size: xx-large;
+           z-index: 2;
        }
     }
     
@@ -502,6 +525,7 @@ text-align: center;
         width: 82px;
         height: 90px;
         font: normal normal normal 23px/28px Barlow;
+        
     }
     @media (max-width: 450px){
         #setmins{
@@ -514,20 +538,26 @@ text-align: center;
             font: normal normal normal 23px/28px Barlow;
         }   
     }
-    .mins{
+    #Mins{
         position: absolute;
        top: 55px;;
-       left:227px;
+       left:14rem;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        font-size: xx-large;
+       z-index: 2;
+       color: #801df1;
+
    }
    @media (max-width: 450px){
-    .mins{
+    #Mins{
         position: absolute;
        top: 55px;;
        left:182px;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        font-size: xx-large;
+       z-index: 2;
+       color: #801df1;
+
    } 
    }
 
@@ -554,65 +584,79 @@ text-align: center;
             font: normal normal normal 23px/28px Barlow;
         }   
     }
-    .secs{
+    #Secs{
         position: absolute;
        top: 55px;;
        left:337px;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        font-size: xx-large;
+       z-index: 2;
+       color: #801df1;
+
    }
    @media (max-width: 450px){
-    .secs{
+    #Secs{
         position: absolute;
        top: 55px;;
        left:278px;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        font-size: xx-large;
+       z-index: 2;
+       color: #801df1;
+
    }
 
    }
     #setampm{
         text-align: center;
-        background-color:#F25CFE;
+        background-color: #F25CFE;
+        color: #801df1;
         position: absolute;
-        top: 5px;
+        top: 28px;
         left: 418px;
         height: 90px;
         width: 65px;
-        font: normal normal normal 23px/28px Barlow;
+        font: normal normal normal 34px/83px Barlow;
+    
     }
     @media (max-width: 450px){
         #setampm{
+          
             text-align: center;
-            background-color:#F25CFE;
+            background-color: #F25CFE;
+            color: #801df1;
             position: absolute;
-            top: 0;
+            top: 23px;
             left: 21.5rem;
-            width: 64px;
+            right: 0%;
+            width: fit-content;
             height: 78px;
-            font: normal normal normal 23px/28px Barlow;
+            font: normal normal normal 1.5rem/78px Barlow;
+            
         }
 
     }
-    .ampm{
+    #ampm{
         position: absolute;
        top: 55px;;
        left:427px;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        font-size: xx-large;
        color: #801df1;
+       z-index: 2;
    }
    @media (max-width: 450px){
-    .ampm{
+    #ampm{
         position: absolute;
        top: 50px;;
        left:353px;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        font-size: xx-large;
        color: #801df1;
-   }  
+       z-index: 2;
+         }  
    }
-   .colon1{
+    .colon1{
         position: absolute;
         top: 51px;
         left: 189px;
@@ -625,6 +669,7 @@ text-align: center;
         left: 147px;
         font-size: xx-large;
     }
+        
     }
     .colon2{
         position: absolute;
@@ -641,4 +686,31 @@ text-align: center;
         }
 
     }
-   
+    
+    .wakeupimg{
+        padding-left: -9px;
+        padding-top: -7px;
+        width: 39px;
+        height: 37px;
+    
+    }
+    #wakeupnote{
+        padding-left: 1%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    }
+    #lunchnote{
+        padding-left: 1%;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    }
+    #napnote{
+        padding-left: 1%;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    }
+    #nightnote{
+        padding-left: 1%;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    }
