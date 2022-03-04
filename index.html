@@ -18,15 +18,15 @@
 
 <div class="bigbox">
    <div class="wakeup">
-         <img src="./wake_up.png" >
+         <img src="./wake_up.png" class="wakeupimg">
          <label for="">Set wake up time</label>
          <label for="waketime"></label>
          <select name="waketime" id="waketime">
          <option value="default">Select Time</option>
-         <option value="0 AM">12AM - 1AM</option>
-         <option value="1 AM">1AM - 2AM</option>
-         <option value="2 AM">2AM - 3AM</option>
-         <option value="3 AM">3AM - 4AM</option>
+         <option value="0 AM">12 AM - 1AM</option>
+         <option value="1 AM">1 AM - 2AM</option>
+         <option value="2 AM">2 AM - 3AM</option>
+         <option value="3 AM">3 AM - 4AM</option>
          <option value="4 AM">4AM - 5AM</option>
          <option value="5 AM">5AM - 6AM</option>
          <option value="6 AM">6AM - 7AM</option>
@@ -44,9 +44,9 @@
          <option value="6 PM">6PM - 7PM</option>
          <option value="7 PM">7PM - 8PM</option>
          <option value="8 PM">8PM - 9PM</option>
-         <option value="9 PM">9PM - 10PM</option>
-         <option value="10 PM">10PM - 11PM</option>
-         <option value="11 PM">11PM - 12AM</option>
+         <option value="9 PM">9 PM - 10 PM</option>
+         <option value="10 PM">10 PM - 11 PM</option>
+         <option value="11 PM">11 PM - 12 AM</option>
         </select>
     </div>
     <div class="hrline1">
@@ -150,18 +150,21 @@
          <option value="11 PM">11PM - 12AM</option>
         </select>
     </div> 
+    <div id="currentValue"></div>
 </div>
-<div class="massage">
+<div class="message1" id="message">
     <p>GOOD MORNING !! WAKE UP!!</p>
 </div>
-<div class="set">
- <span class="textsetalarm">Set Alarm</span>
+<div class="set" onclick="setDisplay()">
+
+            <span class="textsetalarm" class="set">Set Alarm</span>
+           
 </div>
 <div class="set2">
-    <p>Wake Up Time :</p>
-    <p>Lunch Time :</p>
-    <p>Nap Time :</p>
-    <p>Night Time :</p>
+    <p id="wakeupnote">Wake Up Time :</p>
+    <p id="lunchnote">Lunch Time :</p>
+    <p id="napnote">Nap Time :</p>
+    <p id="nightnote">Night Time :</p>
     
 </div>
 </div>
@@ -171,28 +174,34 @@
                 <div class="currentTime3">
                     <div class="flexitem">
                         <div class="time">Time</div>
+                        <div id="Hours"></div>
                         <p id="sethours">hours</p>
-                        <div class="hours">12</div>
+                        <!-- <div class="hours">12</div> -->
                         <div class="colon1">:</div>
+                        <div id="Mins"></div>
                         <p id="setmins">mins</p>
-                        <div class="mins">35</div>
+                        <!-- <div class="mins">35</div> -->
                         <div class="colon2">:</div>
+                        <div id="Secs"></div>
                         <p id="setsecs">secs</p>
-                        <div class="secs">01</div>
-                        <p id="setampm">
-                            <div class="ampm">PM</div>
-                        </p>
+                        <!-- <div class="secs">01</div> -->
+                
+                            <div id="setampm"></div>
+                        
                     </div>
                 </div>
             </div>
-<div class="massage2">
-        GRAB SOME HEALTHY BREAKFAST!!!
-        
-    <div class="img">
-        <!-- <img src="./GM.jpg" alt=""> -->
-    </div>
-</div>
+
+     <p id="message2"> 
+           GRAB SOME HEALTHY BREAKFAST!!!
+<!--          
+         <img  alt="" class="img"> -->
+         <div id="img"></div>
+        </p>
+
+
 </div>  
 </Div>
+<script src="index.js"></script>
 </body>
 </html>
