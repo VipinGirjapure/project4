@@ -22,16 +22,9 @@ if(hours == 0){
 }
 if(hours > 12){
     hours = hours - 12;
-    // hours = ""
-    
-    // amPm = "PM"
+   
 };
-// if(hours < 12){
-//     // hours = hours - 12;
-//     // hours = ""
-    
-//     amPm = "AM"
-// };
+
 if(hours < 10){
     hours = "0" + hours
 }
@@ -50,58 +43,41 @@ document.getElementById("setampm").innerHTML = amPm ;
 
 setInterval(clickme,1000)
 
-function setDisplay(){
+function Display(){
 
     var wakeup_value = document.getElementById('waketime').value;
     var lunch_value = document.getElementById("lunchtime").value;
     var nap_value = document.getElementById("naptime").value;
     var night_value = document.getElementById("nighttime").value;
-    // var current_Value = document.getElementById("currentValue").value;
     var current_hours = new Date().getHours();
-    // let Clock = new Date();
-    // var HourS = Clock.getHours().getHours()
-
-//     if(current_Value == current_hours){
-
-     
-//         document.getElementsByClassName('img').style.backgroundImage=" url(./default.jpg);"
-//         document.getElementsByClassName('message2').innerHTML='Grab Some Healthy Breakfast!!!  vipin';
-//         document.getElementsByClassName("message").innerHTML="GOOD MORNING!! WAKE UP !!";
-    
-// }
+ console.log(current_hours)
     if( wakeup_value == current_hours){
-
-        document.getElementById('img').style.backgroundImage="url(./GM.jpg)";
       
-        // document.getElementById('img').style.backgroundImage="url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spring-quotes-1581440427.jpg?crop=1.00xw:0.752xh;0,0.207xh&resize=980:*)"
-        document.getElementById('message2').innerHTML='Grab Some Healthy Breakfast!!!  vipin';
+        document.getElementById('img').style.backgroundImage="url(./GM.jpg)"
+        document.getElementById('message2').innerHTML='Grab Some Healthy Breakfast!!!';
         document.getElementById("message").innerHTML="GOOD MORNING!! WAKE UP !!";
     
 }
 
 if(lunch_value == current_hours){
-    document.getElementById("img").style.backgroundImage="url(lunch.jpg)"
+    document.getElementById("img").style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7WqWRAjpIi07WcqtjxRr7A3jh2NNxt02BQ&usqp=CAU)"
     document.getElementById('message2').innerHTML="Let's Have Some Lunch !!";
-    document.getElementById('message').innerHTML="Good Afternoon!!";
+    document.getElementById('message').innerHTML="GOOD AFTERNOON!!";
 }
-// else{
-//         document.getElementById("message2").innerText="lunch"
-//     }
+
 
 if(nap_value == current_hours){
-    document.getElementById("img").style.backgroundImage="url(nap.jpg)"
+    document.getElementById("img").style.backgroundImage="url(https://i.pinimg.com/originals/bb/b5/48/bbb5484cf69654da7a64285deb13b75e.jpg)"
     document.getElementById('message2').innerHTML="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
-    document.getElementById("message").innerHTML="Good Night !!";
+    document.getElementById("message").innerHTML="GOOD EVENING!!";
 }
 
 if(night_value == current_hours){
-    document.getElementById("img").style.backgroundImage="url(night.jpg)"
+    document.getElementById("img").style.backgroundImage="url(https://news.northwestern.edu/assets/Stories/2019/12/sleep640.jpg)"
     document.getElementById('message2').innerText="CLOSE YOUR EYES AND GO TO SLEEP";
-    document.getElementById("message").innerText="Good Night !!";
+    document.getElementById("message").innerText="GOOD NIGHT !!";
 }
-// else{
-//     document.getElementById("message2").innerText="Night"
-// }
+
 
 var wakeup_note_value = document.getElementById('waketime');
 var lunch_note_value = document.getElementById("lunchtime");
