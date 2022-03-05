@@ -45,7 +45,7 @@ body{
 }
 .bigbox{
     border-radius: 15px;
-    border: 2px solid black;
+    border: 2px solid  #3D087B;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: rgb(201, 158, 250) 0% 0% no-repeat padding-box;
     position: absolute;
@@ -54,13 +54,16 @@ body{
     width: 517px;
     height: 335px;
     opacity: 1;
+    /* box-shadow: #6950bc  9px 11px 27px; */
+    
+    box-shadow: #6950bc 11px 11px 13px;
+
 }
 @media (max-width: 450px){
     .bigbox{
     border-radius: 15px;
     border: 2px solid black;
-    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-background-color: #9263c9;
+   
     position: absolute;
     top: 40%;
     left: 1%;
@@ -71,18 +74,20 @@ background-color: #9263c9;
 }
 #message{
         position: absolute;
-        top: 527px;
+        top: 502px;
         left: 124px;
         width: 566px;
         height: 77px;
     border: 1px solid;
-
+   
     border: 1px solid #EDEDED;
     border-radius: 10px;
     opacity: 1;
     text-align: center;
     font-size: x-large;
     font-weight: bolder;
+    
+    box-shadow: #6950bc 11px 11px 13px;
     
     color: rgb(245, 238, 238);
 }
@@ -147,32 +152,20 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
     font-size: 23px;
     opacity: 1;
 
-/* background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box; */
 
 }
   
 @media (max-width: 450px){
     .set {
         position: absolute;
-        top: 44rem;
-        left: 6rem;
+        top: 46rem;
+        left: 4rem;
         width: 250px;
         height: 59px;
-        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 23px;
-        color: whitesmoke;
-        text-align: center;
-        letter-spacing: 0px; */
         border: 2px solid black;
         border-radius: 25px;
         cursor: pointer;
-        /* background-image: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5); */
-        /* animation-name: vip;
-        animation-duration: 0.3sec;
-        animation-timing-function: ease-out; */
-
-        
-    }  
+     }  
 }
  .set2 {
      position: absolute;
@@ -187,16 +180,15 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
     }
     @media (max-width: 450px){
        .set2 {
-            position: absolute;
-            top: 775px;
-            left: 96px;
-           width: 253px;
-           height: fit-content;
-           border: 2px solid black;
-           border-radius: 10px;
-           text-align: left;
-           background-color: #F25CFE;
-           }   
+        position: absolute;
+        top: 808px;
+        left: 4px;
+        width: 100%;
+        height: fit-content;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: left;
+        background-color: #F25CFE;}
     }
     #message2{
         position: absolute;
@@ -204,7 +196,7 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
         left: 706px;
         width: 536px;
         height: 118px;
-       
+        /* box-shadow: #6950bc 11px 15px 13px; */
         border-radius: 8px 8px 0 0;
         background:white;
         text-align: center;
@@ -216,7 +208,8 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
         #message2{
             position: absolute;
             top: 951px;
-            left: 0px;
+            left: 1%;
+            rigth: 1%;
             width: 100%;
            
             border-radius: 8px 8px 0 0;
@@ -235,14 +228,16 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
         left: 706px;
         width: 536px;
         height: 343px;
+        /* box-shadow: #6950bc 11px 11px 13px; */
         border-radius: 0 0 8px 8px;
     }
      @media (max-width: 450px){
         #img{
-            background-image: url(./GM.jpg);
+            background-image: url(https://cdn4.vectorstock.com/i/thumb-large/27/68/sun-holding-cloud-icon-good-morning-cute-kawaii-vector-38972768.jpg);
             position: absolute;
-            top: 118px;
-            left: 0px;
+            background-size: cover;
+            top: 68em;
+            left: 1%;
             width: 100%;
             height: 341px;
             border-radius: 0 0 8px 8px;
@@ -264,7 +259,7 @@ background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF
     #waketime{
         position: absolute;
         top: 74%;
-        left: 36%;
+        left: 43%;
         width: 50%;
         height: 23px;
 text-align: center;
@@ -284,7 +279,7 @@ text-align: center;
     #lunchtime{
         position: absolute;
         top: 79%;
-        left: 36%;
+        left: 43%;
         width: 50%;
         height: 23px;
 text-align: center;
@@ -304,7 +299,7 @@ text-align: center;
     #naptime{
         position: absolute;
         top: 72%;
-        left: 36%;
+        left: 43%;
         width: 50%;
         height: 23px;
 text-align: center;
@@ -324,7 +319,7 @@ text-align: center;
     #nighttime{
         position: absolute;
         top: 34%;
-        left: 36%;
+        left: 43%;
         width: 50%;
         height: 23px;
 text-align: center;
@@ -352,15 +347,16 @@ text-align: center;
     }
     .currentTime1{
         position: absolute;
-        top: 45px;
-        left: 802px;
-        width: 347px;
+        top: 39px;
+        left: 777px;
+        width: 404px;
         height: 130px;
         background: #801df1;
         border: indigo;
-       
+        opacity: 0.71;
         border-radius: 10px;
         z-index: -2;
+    
     }
     @media (max-width: 450px){
         .currentTime1{
@@ -378,14 +374,15 @@ text-align: center;
     }
     .currentTime2{
         position: absolute;
-        top: 30px;
-        left: 766px;
-        width: 416px;
+        top: 25px;
+        left: 742px;
+        width: 472px;
         height: 130px;
-        background:rgb(166 89 255);
-
+        background: rgb(166 89 255);
+        opacity: 0.71;
         border-radius: 10px;
         z-index: -1;
+    
     }
     @media (max-width: 450px){
         .currentTime2{
@@ -408,8 +405,10 @@ text-align: center;
         width: 536px;
         height: 130px;
         background:#c99efa;
-        border: 1px solid #EDEDED;
+        border: 1px solid #3D087B;
         border-radius: 10px;
+
+        
         z-index: 1;
     }
     @media (max-width: 450px){
@@ -497,12 +496,13 @@ text-align: center;
         }
     }
     #Hours{
-         position: absolute;
-        top: 55px;;
-        left:118px;
+        position: absolute;
+        top: 55px;
+        left: 109px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: xx-large;
+        font-size: 42px;
         color: #801df1;
+        z-index: 1;
     
         z-index: 1;
     }
@@ -532,7 +532,7 @@ text-align: center;
             background-color:#F6E2FF;
             position: absolute;
             top: 0px;
-            left: 10.5rem;
+            left: 9.5rem;
             width: 64px;
             height: 78px;
             font: normal normal normal 23px/28px Barlow;
@@ -540,19 +540,18 @@ text-align: center;
     }
     #Mins{
         position: absolute;
-       top: 55px;;
-       left:14rem;
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       font-size: xx-large;
-       z-index: 2;
-       color: #801df1;
-
+        top: 55px;
+        left: 14rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 42px;
+        z-index: 2;
+        color: #801df1;
    }
    @media (max-width: 450px){
     #Mins{
         position: absolute;
        top: 55px;;
-       left:182px;
+       left:167px;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        font-size: xx-large;
        z-index: 2;
@@ -578,7 +577,7 @@ text-align: center;
             position: absolute;
             
             top: 0px;
-            left: 16.5rem;
+            left: 14.5rem;
             width: 64px;
             height: 78px;
             font: normal normal normal 23px/28px Barlow;
@@ -587,18 +586,20 @@ text-align: center;
     #Secs{
         position: absolute;
        top: 55px;;
-       left:337px;
+       left: 334px;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        font-size: xx-large;
        z-index: 2;
        color: #801df1;
+       font-size: 42px;
+
 
    }
    @media (max-width: 450px){
     #Secs{
         position: absolute;
        top: 55px;;
-       left:278px;
+       left:245px;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        font-size: xx-large;
        z-index: 2;
@@ -627,9 +628,9 @@ text-align: center;
             color: #801df1;
             position: absolute;
             top: 23px;
-            left: 21.5rem;
+            left: 19.5rem;
             right: 0%;
-            width: fit-content;
+            width: 2em;
             height: 78px;
             font: normal normal normal 1.5rem/78px Barlow;
             
@@ -666,7 +667,7 @@ text-align: center;
          .colon1{
         position: absolute;
         top: 45px;
-        left: 147px;
+        left: 140px;
         font-size: xx-large;
     }
         
@@ -681,7 +682,7 @@ text-align: center;
         .colon2{
             position: absolute;
             top: 45px;
-            left: 245px;
+            left: 58.3%;
             font-size: xx-large;
         }
 
